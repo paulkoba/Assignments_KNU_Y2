@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/fail/Documents/Assignments_KNU_Y2/lab01/main.cpp
+iostream
+-
+sparse_matrix.h
+/home/fail/Documents/Assignments_KNU_Y2/lab01/sparse_matrix.h
+
+/home/fail/Documents/Assignments_KNU_Y2/lab01/sparse_matrix.h
+unordered_map
+-
+vector
+-
+
