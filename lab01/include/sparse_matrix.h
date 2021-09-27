@@ -37,7 +37,7 @@ public:
 
     /* Returns an element at position (i, j). Throws if invalid index is provided. */
     [[nodiscard]] constexpr T get_element(std::size_t i, std::size_t j) noexcept {
-        if(i >= n || j >= m) throw std::out_of_range("sparse_matrix::set_element(): element doesn't fit into the matrix");
+        if(i >= n || j >= m) throw std::out_of_range("sparse_matrix::get_element(): element doesn't fit into the matrix");
         auto it = data.find({i, j});
         return it == data.end() ? 0 : it->second;
     }

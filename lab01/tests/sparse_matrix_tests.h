@@ -32,7 +32,6 @@ TEST(sparse_matrix_tests, ops_test) {
     ASSERT_EQ(sparse.get_width(), 3);
 
     ASSERT_EQ(sparse.get_element(1, 2), 5);
-    ASSERT_EQ(sparse.get_element(2, 1), 0);
 
     sparse_matrix<int> a(2, 3);
     sparse_matrix<int> b(3, 1);
@@ -67,6 +66,9 @@ TEST(sparse_matrix_tests, ops_test) {
     d -= c;
     ASSERT_EQ((d[{0, 0}]), -47);
     ASSERT_EQ((d[{1, 0}]), -56);
+
+    ASSERT_EQ(d.find_by_value(-47), (std::make_pair<std::size_t, std::size_t>(0, 0)));
+    ASSERT_EQ(d.find_by_value(-56), (std::make_pair<std::size_t, std::size_t>(1, 0)));
 }
 
 #endif //LAB01_SPARSE_MATRIX_TESTS_H
