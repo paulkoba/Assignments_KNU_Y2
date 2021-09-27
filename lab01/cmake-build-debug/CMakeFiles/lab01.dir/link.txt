@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/lab01.dir/main.cpp.o  -o lab01 
+/usr/bin/c++  -Wall -O3 -lgtest  -g   CMakeFiles/lab01.dir/main.cpp.o  -o lab01 

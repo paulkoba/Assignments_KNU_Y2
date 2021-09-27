@@ -84,7 +84,7 @@ public:
     }
 
     [[nodiscard]] constexpr sparse_matrix transposed() const noexcept {
-        sparse_matrix output(n, m);
+        sparse_matrix output(m, n);
         for(const auto& p : data) output.data[{p.first.second, p.first.first}] = p.second;
         return output;
     }
@@ -94,7 +94,9 @@ public:
     }
 
     sparse_matrix operator*(const sparse_matrix& other) {
-        sparse_matrix output(m, other.n);
+        if(m != other.n) throw std::invalid_argument("sparse_matrix::operator*(): Matrices have incompatible dimensions.");
+
+        sparse_matrix output(n, other.m);
 
         for(const auto& p : data) {
             for(std::size_t i = 0; i < m; ++i) {

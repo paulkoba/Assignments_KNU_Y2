@@ -6,15 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/home/fail/Documents/Assignments_KNU_Y2/lab01/main.cpp
-iostream
--
-sparse_matrix.h
-/home/fail/Documents/Assignments_KNU_Y2/lab01/sparse_matrix.h
-
-/home/fail/Documents/Assignments_KNU_Y2/lab01/sparse_matrix.h
+/home/fail/Documents/Assignments_KNU_Y2/lab01/include/sparse_matrix.h
 unordered_map
 -
 vector
 -
+
+/home/fail/Documents/Assignments_KNU_Y2/lab01/main.cpp
+tests/sparse_matrix_tests.h
+/home/fail/Documents/Assignments_KNU_Y2/lab01/tests/sparse_matrix_tests.h
+
+/home/fail/Documents/Assignments_KNU_Y2/lab01/tests/sparse_matrix_tests.h
+gtest/gtest.h
+/home/fail/Documents/Assignments_KNU_Y2/lab01/tests/gtest/gtest.h
+../include/sparse_matrix.h
+/home/fail/Documents/Assignments_KNU_Y2/lab01/include/sparse_matrix.h
 

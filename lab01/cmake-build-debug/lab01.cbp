@@ -82,10 +82,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/fail/Documents/Assignments_KNU_Y2/lab01/include/sparse_matrix.h">
+			<Option target="lab01"/>
+		</Unit>
 		<Unit filename="/home/fail/Documents/Assignments_KNU_Y2/lab01/main.cpp">
 			<Option target="lab01"/>
 		</Unit>
-		<Unit filename="/home/fail/Documents/Assignments_KNU_Y2/lab01/sparse_matrix.h">
+		<Unit filename="/home/fail/Documents/Assignments_KNU_Y2/lab01/tests/sparse_matrix_tests.h">
 			<Option target="lab01"/>
 		</Unit>
 		<Unit filename="/home/fail/Documents/Assignments_KNU_Y2/lab01/CMakeLists.txt">
