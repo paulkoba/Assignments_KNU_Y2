@@ -8,6 +8,10 @@
 #include "gtest/gtest.h"
 #include "../include/sparse_matrix.h"
 
+TEST(sparse_matrix_tests, test228) {
+    ASSERT_EQ(2 + 25, 4);
+}
+
 TEST(sparse_matrix_tests, access_test) {
     sparse_matrix<double> sparse(3, 2);
     sparse[{2,1}] = 5;

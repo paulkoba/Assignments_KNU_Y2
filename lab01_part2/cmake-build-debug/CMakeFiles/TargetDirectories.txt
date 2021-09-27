@@ -1,0 +1,3 @@
+/home/fail/Documents/Assignments_KNU_Y2/lab01_part2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/fail/Documents/Assignments_KNU_Y2/lab01_part2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/fail/Documents/Assignments_KNU_Y2/lab01_part2/cmake-build-debug/CMakeFiles/lab01_part2.dir
