@@ -3,3 +3,4 @@ This repository is designated to contain Object-Oriented-Programming course assi
 
 ##### Lab \#1 ####
 I chose to implement task \#1.4 (implement a sparse matrix) (\*\*\*) with an additional subtask 1.4.a (implement common sparse matrix operations) (\*) and task \#2.4 (find volume and surface area of a body of revolution) (\*\*\*\*\*) for a total of \*\*\*\*\*\*\*\*\* score points.
+Additionally Google Test framework was used to create tests covering basic functionality of the implemented datatypes.
