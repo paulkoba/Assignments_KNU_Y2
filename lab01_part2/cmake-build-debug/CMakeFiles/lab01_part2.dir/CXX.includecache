@@ -6,17 +6,31 @@
 
 #IncludeRegexTransform: 
 
+/home/fail/Documents/Assignments_KNU_Y2/lab01_part2/expression_parser.h
+string
+-
+vector
+-
+stack
+-
+stdexcept
+-
+cmath
+-
+iostream
+-
+
 /home/fail/Documents/Assignments_KNU_Y2/lab01_part2/main.cpp
 iostream
 -
+expression_parser.h
+/home/fail/Documents/Assignments_KNU_Y2/lab01_part2/expression_parser.h
 solid_of_revolution.h
 /home/fail/Documents/Assignments_KNU_Y2/lab01_part2/solid_of_revolution.h
 tests/solid_of_revolution_tests.h
 /home/fail/Documents/Assignments_KNU_Y2/lab01_part2/tests/solid_of_revolution_tests.h
-
-/home/fail/Documents/Assignments_KNU_Y2/lab01_part2/solid_of_revolution.cpp
-solid_of_revolution.h
-/home/fail/Documents/Assignments_KNU_Y2/lab01_part2/solid_of_revolution.h
+tests/expression_parser_tests.h
+/home/fail/Documents/Assignments_KNU_Y2/lab01_part2/tests/expression_parser_tests.h
 
 /home/fail/Documents/Assignments_KNU_Y2/lab01_part2/solid_of_revolution.h
 cmath
@@ -33,6 +47,12 @@ stdexcept
 -
 iostream
 -
+
+/home/fail/Documents/Assignments_KNU_Y2/lab01_part2/tests/expression_parser_tests.h
+gtest/gtest.h
+/home/fail/Documents/Assignments_KNU_Y2/lab01_part2/tests/gtest/gtest.h
+../expression_parser.h
+/home/fail/Documents/Assignments_KNU_Y2/lab01_part2/expression_parser.h
 
 /home/fail/Documents/Assignments_KNU_Y2/lab01_part2/tests/solid_of_revolution_tests.h
 gtest/gtest.h

@@ -82,6 +82,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/fail/Documents/Assignments_KNU_Y2/lab01_part2/expression_parser.h">
+			<Option target="lab01_part2"/>
+		</Unit>
 		<Unit filename="/home/fail/Documents/Assignments_KNU_Y2/lab01_part2/main.cpp">
 			<Option target="lab01_part2"/>
 		</Unit>
@@ -89,6 +92,9 @@
 			<Option target="lab01_part2"/>
 		</Unit>
 		<Unit filename="/home/fail/Documents/Assignments_KNU_Y2/lab01_part2/solid_of_revolution.h">
+			<Option target="lab01_part2"/>
+		</Unit>
+		<Unit filename="/home/fail/Documents/Assignments_KNU_Y2/lab01_part2/tests/expression_parser_tests.h">
 			<Option target="lab01_part2"/>
 		</Unit>
 		<Unit filename="/home/fail/Documents/Assignments_KNU_Y2/lab01_part2/tests/solid_of_revolution_tests.h">
