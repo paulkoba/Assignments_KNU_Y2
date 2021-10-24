@@ -48,6 +48,11 @@
     </property>
     <item>
      <property name="text">
+      <string>--</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
       <string>Anyone</string>
      </property>
     </item>
@@ -73,6 +78,11 @@
     </property>
     <item>
      <property name="text">
+      <string>--</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
       <string>Anyone</string>
      </property>
     </item>
@@ -96,6 +106,11 @@
       <height>22</height>
      </rect>
     </property>
+    <item>
+     <property name="text">
+      <string>--</string>
+     </property>
+    </item>
     <item>
      <property name="text">
       <string>Anyone</string>

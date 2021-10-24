@@ -1,5 +1,0 @@
-/home/fail/Documents/Assignments_KNU_Y2/explorer/build-explorer-Desktop-MinSizeRel/CMakeFiles/rebuild_cache.dir
-/home/fail/Documents/Assignments_KNU_Y2/explorer/build-explorer-Desktop-MinSizeRel/CMakeFiles/edit_cache.dir
-/home/fail/Documents/Assignments_KNU_Y2/explorer/build-explorer-Desktop-MinSizeRel/CMakeFiles/explorer.dir
-/home/fail/Documents/Assignments_KNU_Y2/explorer/build-explorer-Desktop-MinSizeRel/CMakeFiles/explorer_autogen_timestamp_deps.dir
-/home/fail/Documents/Assignments_KNU_Y2/explorer/build-explorer-Desktop-MinSizeRel/CMakeFiles/explorer_autogen.dir

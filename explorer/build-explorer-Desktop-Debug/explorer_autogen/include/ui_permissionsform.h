@@ -45,15 +45,18 @@ public:
         accessCombo->addItem(QString());
         accessCombo->addItem(QString());
         accessCombo->addItem(QString());
+        accessCombo->addItem(QString());
         accessCombo->setObjectName(QString::fromUtf8("accessCombo"));
         accessCombo->setGeometry(QRect(240, 50, 72, 22));
         modifyCombo = new QComboBox(groupBox);
         modifyCombo->addItem(QString());
         modifyCombo->addItem(QString());
         modifyCombo->addItem(QString());
+        modifyCombo->addItem(QString());
         modifyCombo->setObjectName(QString::fromUtf8("modifyCombo"));
         modifyCombo->setGeometry(QRect(240, 80, 72, 22));
         executeCombo = new QComboBox(groupBox);
+        executeCombo->addItem(QString());
         executeCombo->addItem(QString());
         executeCombo->addItem(QString());
         executeCombo->addItem(QString());
@@ -89,17 +92,20 @@ public:
     {
         PermissionsForm->setWindowTitle(QCoreApplication::translate("PermissionsForm", "Form", nullptr));
         groupBox->setTitle(QCoreApplication::translate("PermissionsForm", "Access control", nullptr));
-        accessCombo->setItemText(0, QCoreApplication::translate("PermissionsForm", "Anyone", nullptr));
-        accessCombo->setItemText(1, QCoreApplication::translate("PermissionsForm", "Only owner and group", nullptr));
-        accessCombo->setItemText(2, QCoreApplication::translate("PermissionsForm", "Only owner", nullptr));
+        accessCombo->setItemText(0, QCoreApplication::translate("PermissionsForm", "--", nullptr));
+        accessCombo->setItemText(1, QCoreApplication::translate("PermissionsForm", "Anyone", nullptr));
+        accessCombo->setItemText(2, QCoreApplication::translate("PermissionsForm", "Only owner and group", nullptr));
+        accessCombo->setItemText(3, QCoreApplication::translate("PermissionsForm", "Only owner", nullptr));
 
-        modifyCombo->setItemText(0, QCoreApplication::translate("PermissionsForm", "Anyone", nullptr));
-        modifyCombo->setItemText(1, QCoreApplication::translate("PermissionsForm", "Only owner and group", nullptr));
-        modifyCombo->setItemText(2, QCoreApplication::translate("PermissionsForm", "Only owner", nullptr));
+        modifyCombo->setItemText(0, QCoreApplication::translate("PermissionsForm", "--", nullptr));
+        modifyCombo->setItemText(1, QCoreApplication::translate("PermissionsForm", "Anyone", nullptr));
+        modifyCombo->setItemText(2, QCoreApplication::translate("PermissionsForm", "Only owner and group", nullptr));
+        modifyCombo->setItemText(3, QCoreApplication::translate("PermissionsForm", "Only owner", nullptr));
 
-        executeCombo->setItemText(0, QCoreApplication::translate("PermissionsForm", "Anyone", nullptr));
-        executeCombo->setItemText(1, QCoreApplication::translate("PermissionsForm", "Only owner and group", nullptr));
-        executeCombo->setItemText(2, QCoreApplication::translate("PermissionsForm", "Only owner", nullptr));
+        executeCombo->setItemText(0, QCoreApplication::translate("PermissionsForm", "--", nullptr));
+        executeCombo->setItemText(1, QCoreApplication::translate("PermissionsForm", "Anyone", nullptr));
+        executeCombo->setItemText(2, QCoreApplication::translate("PermissionsForm", "Only owner and group", nullptr));
+        executeCombo->setItemText(3, QCoreApplication::translate("PermissionsForm", "Only owner", nullptr));
 
         label_2->setText(QCoreApplication::translate("PermissionsForm", "Acess", nullptr));
         label_3->setText(QCoreApplication::translate("PermissionsForm", "Modify", nullptr));
