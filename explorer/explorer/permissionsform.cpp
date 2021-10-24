@@ -3,41 +3,51 @@
 
 void PermissionsForm::setupDropdowns()
 {
-   /* std::filesystem::permissions (path, std::filesystem::perms::owner_all |
-                                 std::filesystem::perms::group_all |
-                                 std::filesystem::perms::others_all );
-    */
-
     auto perms = std::filesystem::status(path).permissions();
 
-    if((perms & std::filesystem::perms::others_read) != std::filesystem::perms::none) {
+    if((perms & std::filesystem::perms::others_read) != std::filesystem::perms::none) 
+    {
         ui->accessCombo->setCurrentIndex(1);
-    } else if((perms & std::filesystem::perms::group_read) != std::filesystem::perms::none) {
+    }
+    else if((perms & std::filesystem::perms::group_read) != std::filesystem::perms::none) 
+    {
         ui->accessCombo->setCurrentIndex(2);
-    } else if((perms & std::filesystem::perms::owner_read) != std::filesystem::perms::none) {
+    }
+    else if((perms & std::filesystem::perms::owner_read) != std::filesystem::perms::none) 
+    {
         ui->accessCombo->setCurrentIndex(3);
     }
 
     if((perms & std::filesystem::perms::others_exec) != std::filesystem::perms::none) {
         ui->executeCombo->setCurrentIndex(1);
-    } else if((perms & std::filesystem::perms::group_exec) != std::filesystem::perms::none) {
+    }
+    else if((perms & std::filesystem::perms::group_exec) != std::filesystem::perms::none) 
+    {
         ui->executeCombo->setCurrentIndex(2);
-    } else if((perms & std::filesystem::perms::owner_exec) != std::filesystem::perms::none) {
+    }
+    else if((perms & std::filesystem::perms::owner_exec) != std::filesystem::perms::none) 
+    {
         ui->executeCombo->setCurrentIndex(3);
     }
 
-    if((perms & std::filesystem::perms::others_write) != std::filesystem::perms::none) {
+    if((perms & std::filesystem::perms::others_write) != std::filesystem::perms::none) 
+    {
         ui->modifyCombo->setCurrentIndex(1);
-    } else if((perms & std::filesystem::perms::group_write) != std::filesystem::perms::none) {
+    }
+    else if((perms & std::filesystem::perms::group_write) != std::filesystem::perms::none) 
+    {
         ui->modifyCombo->setCurrentIndex(2);
-    } else if((perms & std::filesystem::perms::owner_write) != std::filesystem::perms::none) {
+    }
+    else if((perms & std::filesystem::perms::owner_write) != std::filesystem::perms::none)
+    {
         ui->modifyCombo->setCurrentIndex(3);
     }
 }
 
 void PermissionsForm::executeComboChanged(int index)
 {
-    switch (index) {
+    switch (index) 
+    {
     case 0:
         std::filesystem::permissions(path, std::filesystem::perms::owner_exec |
                                      std::filesystem::perms::group_exec |
@@ -71,7 +81,8 @@ void PermissionsForm::executeComboChanged(int index)
 
 void PermissionsForm::editComboChanged(int index)
 {
-    switch (index) {
+    switch (index) 
+    {
     case 0:
         std::filesystem::permissions(path, std::filesystem::perms::owner_write |
                                      std::filesystem::perms::group_write |
@@ -105,7 +116,8 @@ void PermissionsForm::editComboChanged(int index)
 
 void PermissionsForm::accessComboChanged(int index)
 {
-    switch (index) {
+    switch (index) 
+    {
     case 0:
         std::filesystem::permissions(path, std::filesystem::perms::owner_read |
                                      std::filesystem::perms::group_read |
@@ -147,17 +159,17 @@ PermissionsForm::PermissionsForm(std::string filepath, QWidget *parent)
     ui->location->setText(QString::fromStdString(path));
 
     QObject::connect(ui->accessCombo, QOverload<int>::of(&QComboBox::currentIndexChanged),
-                     [=] (int index) {
+                     [=, this] (int index) {
         accessComboChanged(index);
     });
 
     QObject::connect(ui->executeCombo, QOverload<int>::of(&QComboBox::currentIndexChanged),
-                     [=] (int index) {
+                     [=, this] (int index) {
         executeComboChanged(index);
     });
 
     QObject::connect(ui->modifyCombo, QOverload<int>::of(&QComboBox::currentIndexChanged),
-                     [=] (int index) {
+                     [=, this] (int index) {
         editComboChanged(index);
     });
 }
