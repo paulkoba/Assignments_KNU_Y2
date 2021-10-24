@@ -24,9 +24,9 @@ private:
 private:
     void setupDropdowns();
 
-    void accessComboChanged();
-    void editComboChanged();
-    void executeComboChanged();
+    void accessComboChanged(int);
+    void editComboChanged(int);
+    void executeComboChanged(int);
 };
 
 #endif // PERMISSIONSFORM_H

@@ -200,12 +200,12 @@ MainWindow::MainWindow(QWidget *parent)
     deleteAction = fileMenu->addAction("&Delete");
     newFileAction = fileMenu->addAction("Create new fil&e");
     newFolderAction = fileMenu->addAction("Create new f&older");
-    quitAction = fileMenu->addAction("&Quit");
     propertiesAction = fileMenu->addAction("&Properties");
+    quitAction = fileMenu->addAction("&Quit");
 
     //Setup slots
     QObject::connect(ui->fileTreeView, &QTreeView::doubleClicked,
-                     [=] (const QModelIndex& val) {
+                     [=, this] (const QModelIndex& val) {
         Helpers::tryOpenFile(fsmodel->filePath(val));
     });
 
