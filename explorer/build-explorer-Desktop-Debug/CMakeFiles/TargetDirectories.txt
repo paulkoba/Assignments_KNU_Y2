@@ -1,0 +1,5 @@
+/home/fail/Documents/Assignments_KNU_Y2/explorer/build-explorer-Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/home/fail/Documents/Assignments_KNU_Y2/explorer/build-explorer-Desktop-Debug/CMakeFiles/edit_cache.dir
+/home/fail/Documents/Assignments_KNU_Y2/explorer/build-explorer-Desktop-Debug/CMakeFiles/explorer.dir
+/home/fail/Documents/Assignments_KNU_Y2/explorer/build-explorer-Desktop-Debug/CMakeFiles/explorer_autogen_timestamp_deps.dir
+/home/fail/Documents/Assignments_KNU_Y2/explorer/build-explorer-Desktop-Debug/CMakeFiles/explorer_autogen.dir

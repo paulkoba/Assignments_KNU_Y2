@@ -21,7 +21,7 @@ public:
     solid_of_revolution() = delete;
     /* Stores an approximation of a body created by rotation of y = fun(x) from y = 0 to y = 5 about x-axis */
     solid_of_revolution(double start, double end, std::size_t sample_count, const std::function<double(double)>& fun);
-    explicit solid_of_revolution(std::vector<std::pair<double, double>> values);
+    explicit solid_of_revolution(std::vector<std::pair<double, double>>  values);
 
     [[nodiscard]] double get_volume() const noexcept;
     [[nodiscard]] double get_surface() const noexcept;

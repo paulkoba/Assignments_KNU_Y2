@@ -17,8 +17,6 @@ stdexcept
 -
 cmath
 -
-iostream
--
 
 /home/fail/Documents/Assignments_KNU_Y2/lab01_part2/main.cpp
 iostream
@@ -31,6 +29,12 @@ tests/solid_of_revolution_tests.h
 /home/fail/Documents/Assignments_KNU_Y2/lab01_part2/tests/solid_of_revolution_tests.h
 tests/expression_parser_tests.h
 /home/fail/Documents/Assignments_KNU_Y2/lab01_part2/tests/expression_parser_tests.h
+
+/home/fail/Documents/Assignments_KNU_Y2/lab01_part2/solid_of_revolution.cpp
+solid_of_revolution.h
+/home/fail/Documents/Assignments_KNU_Y2/lab01_part2/solid_of_revolution.h
+utility
+-
 
 /home/fail/Documents/Assignments_KNU_Y2/lab01_part2/solid_of_revolution.h
 cmath

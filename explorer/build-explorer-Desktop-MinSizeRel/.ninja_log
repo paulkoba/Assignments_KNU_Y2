@@ -1,0 +1,11 @@
+# ninja log v5
+0	160	1635017883275819219	explorer_autogen/timestamp	ea7c7ec7aa35a5a7
+0	160	1635017883275819219	explorer_autogen/mocs_compilation.cpp	ea7c7ec7aa35a5a7
+0	160	1635017883275819219	/home/fail/Documents/Assignments_KNU_Y2/explorer/build-explorer-Desktop-MinSizeRel/explorer_autogen/timestamp	ea7c7ec7aa35a5a7
+0	160	1635017883275819219	/home/fail/Documents/Assignments_KNU_Y2/explorer/build-explorer-Desktop-MinSizeRel/explorer_autogen/mocs_compilation.cpp	ea7c7ec7aa35a5a7
+161	1335	1635017884449152552	CMakeFiles/explorer.dir/settingsmanager.cpp.o	6c574cced8247861
+161	1602	1635017884722485885	CMakeFiles/explorer.dir/helpers.cpp.o	6549efdf0a986e01
+161	1797	1635017884915819219	CMakeFiles/explorer.dir/main.cpp.o	40ebcba21e59df5d
+161	1963	1635017885082485885	CMakeFiles/explorer.dir/explorer_autogen/mocs_compilation.cpp.o	bf949aa4e6fd1555
+161	2301	1635017885419152552	CMakeFiles/explorer.dir/mainwindow.cpp.o	cb55275491eed6d7
+2301	2555	1635017885669152551	explorer	4dbc4439592de528

@@ -4,6 +4,8 @@
 
 #include "solid_of_revolution.h"
 
+#include <utility>
+
 solid_of_revolution::solid_of_revolution(double start, double end, std::size_t sample_count,
                                          const std::function<double(double)> &fun) {
     if(sample_count < 2) throw std::invalid_argument("Expected sample count >= 2");
@@ -17,7 +19,7 @@ solid_of_revolution::solid_of_revolution(double start, double end, std::size_t s
     }
 }
 
-solid_of_revolution::solid_of_revolution(std::vector<std::pair<double, double>> values) : data(std::move(values)) {
+solid_of_revolution::solid_of_revolution(std::vector<std::pair<double, double>>  values) : data(std::move(values)) {
     std::sort(data.begin(), data.end());
 
     if(data.size() < 2) throw std::invalid_argument("Expected sample count >= 2");

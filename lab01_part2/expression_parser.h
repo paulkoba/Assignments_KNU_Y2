@@ -35,7 +35,7 @@ static void token_insert(std::vector<token>& output, char p) {
         output.push_back({OPERATOR, static_cast<uint64_t>(p)});
     }
 }
-#include <iostream>
+
 class expression_parser {
 public:
     static std::vector<token> infix_to_rpn(const std::string& expr) {

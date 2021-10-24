@@ -28,6 +28,7 @@ public:
 
     /* Creates a sparse matrix with specified dimensions */
     sparse_matrix(std::size_t height, std::size_t width) : n(height), m(width) {}
+    
 
     /* Returns number of rows in matrix. */
     [[nodiscard]] constexpr std::size_t get_height() const noexcept { return n; }
@@ -36,7 +37,7 @@ public:
     [[nodiscard]] constexpr std::size_t get_width() const noexcept { return m; }
 
     /* Returns an element at position (i, j). Throws if invalid index is provided. */
-    [[nodiscard]] constexpr T get_element(std::size_t i, std::size_t j) noexcept {
+    [[nodiscard]] constexpr T get_element(std::size_t i, std::size_t j) {
         if(i >= n || j >= m) throw std::out_of_range("sparse_matrix::get_element(): element doesn't fit into the matrix");
         auto it = data.find({i, j});
         return it == data.end() ? 0 : it->second;
@@ -50,7 +51,7 @@ public:
     }
 
     /* Returns reference to an element at position (i, j). Throws if invalid index is provided. */
-    [[nodiscard]] constexpr T& operator[](std::pair<std::size_t, std::size_t> pos) noexcept {
+    [[nodiscard]] constexpr T& operator[](std::pair<std::size_t, std::size_t> pos) {
         if(pos.first >= n || pos.second >= m)
             throw std::out_of_range("sparse_matrix::operator[](): element doesn't fit into the matrix");
         return data[pos];
@@ -110,7 +111,7 @@ public:
     }
 
     /* Perform matrix multiplication on two matrices. Throws if matrices have incompatible dimensions.
-     * O(width * num_nonzero_elements) complexity */
+     * O(width * data.size()) complexity */
     sparse_matrix operator*(const sparse_matrix& other) {
         if(m != other.n) throw std::invalid_argument("sparse_matrix::operator*(): Matrices have incompatible dimensions.");
 
@@ -128,7 +129,7 @@ public:
         return output;
     }
 
-    /* Finds an element by its value. O(num_of_nonzero_elements) complexity */
+    /* Finds an element by its value. O(data.size()) complexity */
     std::pair<std::size_t, std::size_t> find_by_value(T val) {
         for(const auto& p : data) if(p.second == val) return p.first;
 
